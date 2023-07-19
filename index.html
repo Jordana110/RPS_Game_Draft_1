@@ -6,15 +6,17 @@
                   name="viewport"
                   content="width=device-width, initial-scale=1.0"
             />
+            <link rel="stylesheet" href="./assets/css/style.css">
             <script defer src="./assets/js/main.js"></script>
-            <title>JS_Rock,Paper,Scissors</title>
+            <title>JS_Rock,Paper,Scissors Draft1</title>
       </head>
       <body>
             <header>
                   <h1>Rock Paper Scissors</h1>
             </header>
             <main>
-                  <form class="roundchoice">
+                  <section class="roundview" id="roundsdisplay">
+                  <form >
                         <fieldset>
                               <div>
                                     <h2>How many rounds?</h2>
@@ -46,44 +48,31 @@
                               </div>
                         </fieldset>
                   </form>
-
-                  <div class="scoreboard">
-                    <div>
+            </section>
+<section class="scoreboard">
+                  
+      <div id="user">
                       <p>User</p>
                     </div>
-                    <div id="resultUser">
-                    </div>
-                    <p>0 :  0</p>
-                    <div id="resultComp">
-                    </div>
-                    <div>
+                    <p> :  </p>
+                    <div id="comp">
                       <p>Comp</p>
                     </div>
-                  </div>
-
+                  
+            </section>
+            <section class="lastsecbeforefooter">
                   <div>
                     <p class="textdescription" id="textd"> Let´s play</p>
                   </div>
-
-                  <img
-                        src="./assets/icons/icons8-rock-48.png"
-                        alt="Rock"
-                        id="rock"
-                  />
-                  <img
-                        src="./assets/icons/icons8-paper-30.png"
-                        alt="Paper"
-                        id="paper"
-                  />
-                  <img
-                        src="./assets/icons/icons8-scissor-64.png"
-                        alt="Scissors"
-                        id="scissors"
-                  />
+                  <section class="rps">
+                     <button type="button" id="rock">rock</button>
+                     <button type="button" id="paper">paper</button>
+                     <button type="button" id="scissors">scissors</button>
+                    </section>
             </main>
             <footer>
                   <h4>Make Your Move.</h4>
-                  <button type="reset" id="resetbutton">Restart</button>
+                  <a href="" id="restart">restart</a>
             </footer>
       </body>
 </html>
